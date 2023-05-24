@@ -14,7 +14,7 @@ public class MovieRepository {
     }
 
     public void addDirector(Director director) {
-        directors.put(director.getDirectorName(),director);
+        directors.put(director.getName(),director);
     }
 
     public void addMovieDirectorPair(Movie movie, String directorName) {
