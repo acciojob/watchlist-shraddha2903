@@ -52,9 +52,9 @@ public class MovieController {
 
     //7 task
     @GetMapping("/get-all-movies")
-    public  List<Movie> findAllMovies()
+    public  ResponseEntity<List<Movie>> findAllMovies()
     {
-        return movieService.getAllMovies();
+        return new ResponseEntity<>(movieService.getAllMovies(),HttpStatus.OK);
     }
 
     //8 task
